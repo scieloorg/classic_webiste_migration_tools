@@ -32,13 +32,14 @@ echo "......."
 echo "...."
 
 if [ -d bases/artigo/p ]; then
-    echo "Created id files for bases-work/artigo/p"
+    echo "Create id files for bases-work/artigo/p"
     echo "...."
     ./new_platform/script/bases_p.sh
     echo "...."
 fi
 
 echo "Created id files"
+....
 find new_platform/bases_for_upload -name "*.id"
 
 
