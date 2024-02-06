@@ -4,7 +4,7 @@ Script que cria arquivos `*.id` das bases de dados do site clássico (`*.mst/*.x
 O script principal `./new_platform/script/start.sh` deve ser executado com a frequência que é feita a publicação no site clássico para manter os arquivos `*.id` atualizados para consumo da aplicação upload.
 
 # Uso
-Instalar a pasta new_platform no site clássico junto às pastas bases, bases-work, proc.
+Instalar a pasta **new_platform** no site clássico junto às pastas bases, bases-work, proc.
 E execute os comandos:
 
 Para garantir permissão de execução dos scripts
