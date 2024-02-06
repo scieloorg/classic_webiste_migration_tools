@@ -10,12 +10,16 @@ E execute os comandos:
 Para garantir permissão de execução dos scripts
 
 ```console
-> chmod +x new_platform/script/*.sh
+chmod +x new_platform/script/*.sh
 ```
 
 Para obter os arquivos esperados
 ```console
-> ./new_platform/script/start.sh
+./new_platform/script/start.sh
+```
+
+Resultado da execução do comando
+```
 ....
 Create new_platform/bases_for_upload/title.id
 Create new_platform/bases_for_upload/issue.id
