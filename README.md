@@ -23,7 +23,10 @@ Resultado da execução do comando
 ....
 Create new_platform/bases_for_upload/title.id
 Create new_platform/bases_for_upload/issue.id
-Create script ./new_platform/tmp/script.sh
+Create id files for serial
+....
+....
+Create script ./new_platform/tmp/create_bases_work_acron.sh
 Create id files for bases-work/acron/acron
 .......
 Not found bases-work/aiss/aiss.mst
@@ -46,7 +49,7 @@ Not found bases-work/scol/scol.mst
 Not found bases-work/sdeb/sdeb.mst
 Not found bases-work/spm/spm.mst
 ....
-Created id files for bases-work/artigo/p
+Create id files for bases-work/artigo/p
 ....
 ....
 Created id files
@@ -55,4 +58,5 @@ new_platform/bases_for_upload/title.id
 new_platform/bases_for_upload/issue.id
 new_platform/bases_for_upload/bases-work/medicc/medicc.id
 new_platform/bases_for_upload/bases-work/artigo/p/0034-8910/1996/0005/00013.id
+new_platform/bases_for_upload/serial/jbn/v36n1/base/v36n1.id
 ```
