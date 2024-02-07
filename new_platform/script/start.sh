@@ -34,7 +34,7 @@ echo "...."
 if [ -d bases/artigo/p ]; then
     echo "Create id files for bases-work/artigo/p"
     echo "...."
-    ./new_platform/script/bases_p.sh
+    ./new_platform/script/bases_p/bases_p.sh
     echo "...."
 fi
 
