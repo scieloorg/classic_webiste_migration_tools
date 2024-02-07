@@ -1,0 +1,2 @@
+,if p(v930) and v930<>'' then ,'./new_platform/script/bases_work_acron/bases_work_acron_create_id_file.sh ',v930/, fi,
+,if p(v68) and v68<>'' then ,'./new_platform/script/bases_work_acron/bases_work_acron_create_id_file.sh ',v68/, fi,
