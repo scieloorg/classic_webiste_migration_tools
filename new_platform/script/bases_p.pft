@@ -1,1 +1,0 @@
-,if p(v1) and v1<>'' then ,'./new_platform/script/bases_p_create_id_file.sh ',v1/, fi,
