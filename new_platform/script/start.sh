@@ -21,14 +21,14 @@ proc/cisis/i2id bases/title/title > new_platform/bases_for_upload/title.id
 echo "Create new_platform/bases_for_upload/issue.id"
 proc/cisis/i2id bases/issue/issue > new_platform/bases_for_upload/issue.id
 
-echo "Create script ./new_platform/tmp/script.sh"
-proc/cisis/mx bases/title/title lw=9999 "pft=@new_platform/script/commands.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/script.sh
+echo "Create script ./new_platform/tmp/create_bases_work_acron.sh"
+proc/cisis/mx bases/title/title lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/create_bases_work_acron.sh
 
-chmod +x new_platform/tmp/script.sh
+chmod +x new_platform/tmp/create_bases_work_acron.sh
 
 echo "Create id files for bases-work/acron/acron"
 echo "......."
-./new_platform/tmp/script.sh
+./new_platform/tmp/create_bases_work_acron.sh
 echo "...."
 
 if [ -d bases/artigo/p ]; then
