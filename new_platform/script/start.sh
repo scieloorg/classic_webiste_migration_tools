@@ -21,15 +21,13 @@ proc/cisis/i2id bases/title/title > new_platform/bases_for_upload/title.id
 echo "Create new_platform/bases_for_upload/issue.id"
 proc/cisis/i2id bases/issue/issue > new_platform/bases_for_upload/issue.id
 
-if [ -d serial ]; then
-    echo "Create id files for serial"
-    echo "...."
-    ./new_platform/script/serial/serial.sh
-    echo "...."
-fi
+echo "Skip creating id files for serial folder. The new_platform/bases_for_upload/serial content will be ignored"
 
 echo "Create script ./new_platform/tmp/create_bases_work_acron.sh"
 proc/cisis/mx bases/title/title lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/create_bases_work_acron.sh
+
+# Cria arquivo article_pids.csv vazio
+echo > new_platform/bases_for_upload/article_pids.csv
 
 chmod +x new_platform/tmp/create_bases_work_acron.sh
 
@@ -49,4 +47,7 @@ echo "Created id files"
 echo "...."
 find new_platform/bases_for_upload -name "*.id"
 
+echo "List the total article pids"
+wc -l new_platform/bases_for_upload/article_pids.csv
 
+echo "You can backup or delete new_platform/bases_for_upload/serial. The current version of Upload does not use serial folder"
