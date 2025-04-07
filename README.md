@@ -23,29 +23,16 @@ Resultado da execução do comando
 ....
 Create new_platform/bases_for_upload/title.id
 Create new_platform/bases_for_upload/issue.id
-Create id files for serial
+Skip creating id files for serial folder. The new_platform/bases_for_upload/serial content will be ignored
 ....
 ....
 Create script ./new_platform/tmp/create_bases_work_acron.sh
 Create id files for bases-work/acron/acron
 .......
-Not found bases-work/aiss/aiss.mst
-Not found bases-work/bwho/bwho.mst
-Not found bases-work/csc/csc.mst
-Not found bases-work/csp/csp.mst
-Not found bases-work/gs/gs.mst
-Not found bases-work/icse/icse.mst
-Not found bases-work/physis/physis.mst
-Not found bases-work/rbepid/rbepid.mst
-Not found bases-work/rcsp/rcsp.mst
-Not found bases-work/resp/resp.mst
-Not found bases-work/ress/ress.mst
-Not found bases-work/rpmesp/rpmesp.mst
-Not found bases-work/rpsp/rpsp.mst
-Not found bases-work/rsap/rsap.mst
-Not found bases-work/rsp/rsp.mst
-Not found bases-work/sausoc/sausoc.mst
-Not found bases-work/scol/scol.mst
+Total bwho article pids
+    4 new_platform/bases_for_upload/bwho/bwho.article_pids.csv
+Total bwho article pids
+    50 new_platform/bases_for_upload/csc/csc.article_pids.csv
 Not found bases-work/sdeb/sdeb.mst
 Not found bases-work/spm/spm.mst
 ....
@@ -58,5 +45,9 @@ new_platform/bases_for_upload/title.id
 new_platform/bases_for_upload/issue.id
 new_platform/bases_for_upload/bases-work/medicc/medicc.id
 new_platform/bases_for_upload/bases-work/artigo/p/0034-8910/1996/0005/00013.id
-new_platform/bases_for_upload/serial/jbn/v36n1/base/v36n1.id
+
+List the total article pids
+    54 new_platform/bases_for_upload/article_pids.csv
+
+You can backup or delete new_platform/bases_for_upload/serial. The current version of Upload does not use serial folder
 ```
