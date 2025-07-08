@@ -23,18 +23,29 @@ proc/cisis/i2id bases/issue/issue > new_platform/bases_for_upload/issue.id
 
 echo "Skip creating id files for serial folder. The new_platform/bases_for_upload/serial content will be ignored"
 
-echo "Create script ./new_platform/tmp/create_bases_work_acron.sh"
-proc/cisis/mx bases/title/title lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/create_bases_work_acron.sh
-
 # Cria arquivo article_pids.csv vazio
 echo > new_platform/bases_for_upload/article_pids.csv
 
-chmod +x new_platform/tmp/create_bases_work_acron.sh
+# #INTEGRAL INICIO
+# echo "Create script ./new_platform/tmp/create_bases_work_acron.sh"
+# proc/cisis/mx bases/title/title lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/create_bases_work_acron.sh
+# chmod +x new_platform/tmp/create_bases_work_acron.sh
+# echo "Create id files for bases-work/acron/acron"
+# echo "......."
+# ./new_platform/tmp/create_bases_work_acron.sh
+# echo "...."
+# #INTEGRAL FIM
 
+# PARCIAL INICIO
+echo "Create script ./new_platform/tmp/create_bases_work_acron_issue.sh"
+proc/cisis/mx bases/issue/issue lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron_issue.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/create_bases_work_acron_issue.seq
+proc/cisis/mx seq=new_platform/tmp/create_bases_work_acron_issue.seq lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron_issue_command.pft" now > new_platform/tmp/create_bases_work_acron_issue.sh
+chmod +x new_platform/tmp/create_bases_work_acron_issue.sh
 echo "Create id files for bases-work/acron/acron"
 echo "......."
-./new_platform/tmp/create_bases_work_acron.sh
+./new_platform/tmp/create_bases_work_acron_issue.sh
 echo "...."
+# PARCIAL FIM
 
 if [ -d bases/artigo/p ]; then
     echo "Create id files for bases-work/artigo/p"
