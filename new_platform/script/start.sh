@@ -26,13 +26,15 @@ echo "Skip creating id files for serial folder. The new_platform/bases_for_uploa
 # Cria arquivo article_pids.csv vazio
 echo > new_platform/bases_for_upload/article_pids.csv
 
-echo "Create script ./new_platform/tmp/create_bases_work_acron.sh"
-proc/cisis/mx bases/title/title lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/create_bases_work_acron.sh
-chmod +x new_platform/tmp/create_bases_work_acron.sh
-echo "Create id files for bases-work/acron/acron"
-echo "......."
-./new_platform/tmp/create_bases_work_acron.sh
-echo "...."
+# #INTEGRAL INICIO
+# echo "Create script ./new_platform/tmp/create_bases_work_acron.sh"
+# proc/cisis/mx bases/title/title lw=9999 "pft=@new_platform/script/bases_work_acron/bases_work_acron.pft" now | tr '[:upper:]' '[:lower:]' | sort -u > new_platform/tmp/create_bases_work_acron.sh
+# chmod +x new_platform/tmp/create_bases_work_acron.sh
+# echo "Create id files for bases-work/acron/acron"
+# echo "......."
+# ./new_platform/tmp/create_bases_work_acron.sh
+# echo "...."
+# #INTEGRAL FIM
 
 if [ -d bases/artigo/p ]; then
     echo "Create id files for bases-work/artigo/p"
